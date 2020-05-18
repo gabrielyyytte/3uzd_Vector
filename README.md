@@ -60,8 +60,8 @@ iterator rend()
 
 | Konteineris | Perskirstymai |
 | ------------- | ------------- |  
-| std::vector  | 27| 
-| mano vector | 27 |
+| std::vector  | 25| 
+| mano vector | 29 |
 
 #### Spartos analizė naudojant duomenų failą su 100000 studentų įrašų, lyginant kiek laiko užtrunka programos veikimas naudojant std::vector ir mano vector realizacijas:
 
