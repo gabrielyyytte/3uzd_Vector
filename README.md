@@ -1,5 +1,5 @@
 # 3uzd_Vector
-## skirtingų funkcijų pavyzdžiai
+## Skirtingų funkcijų pavyzdžiai
 #### push_back():
 ```
 void push_back(const T& val)
