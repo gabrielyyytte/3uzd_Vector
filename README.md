@@ -1,5 +1,6 @@
 # 3uzd_Vector
-## 5 skirtingų funkcijų pavyzdžiai
+## skirtingų funkcijų pavyzdžiai
+#### push_back():
 ```
 void push_back(const T& val)
     {
@@ -8,6 +9,42 @@ void push_back(const T& val)
             grow();
         }
         unchecked_append(val);
+    }
+```
+#### rbegin():
+```
+iterator rbegin()
+    {
+        iterator it = limit;
+        return --it;
+    }
+```
+#### reserve():
+```
+void reserve(size_type new_cap)
+    {
+        if (new_cap > capacity())
+        {
+            iterator new_data = alloc.allocate(new_cap);
+            iterator new_avail = std::uninitialized_copy(data, avail, new_data);
+            uncreate();
+            data = new_data;
+            avail = new_avail;
+            limit = data + new_cap;
+        }
+    }
+```
+#### begin():
+```
+iterator begin() { return data; }
+const_iterator begin() const { return data; }
+```
+#### rend():
+```
+iterator rend()
+    {
+        iterator it = data;
+        return ++it;
     }
 ```
 ## Spartos analizė
