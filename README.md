@@ -1,7 +1,15 @@
 # 3uzd_Vector
 ## 5 skirtingų funkcijų pavyzdžiai
-
-
+```
+void push_back(const T& val)
+    {
+        if (avail == limit)
+        {
+            grow();
+        }
+        unchecked_append(val);
+    }
+```
 ## Spartos analizė
 #### Efektyvumo/spartos analizė naudojant originalų std::vector ir sukurtą mano vector. Lyginama, kiek laiko užtrunka  std::vector tipo ir mano vector tipo tuščių vektorių užpildymas, naudojant push_back() funkciją:
 
