@@ -12,6 +12,7 @@ void push_back(const T& val)
     }
 ```
 #### rbegin():
+Grąžina atvirkštinį iterator į pirmąjį atvirkštinio konteinerio elementą. * Tai atitinka paskutinį neapversto konteinerio elementą. * Jei konteineris tuščias, grąžinamas iterator yra lygus rend ().
 ```
 iterator rbegin()
     {
