@@ -68,7 +68,7 @@ iterator rend()
 
 | Konteineris | 100000 | 
 | ------------- | ------------- | 
-| std::vector  |4.2063s| 
-| mano vector | 6.14874s|
+| std::vector  |2.2063s| 
+| mano vector | 2.14874s|
 
 
